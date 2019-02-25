@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'Menlo';
+    src: url('/fonts/Menlo-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+}
+
+body {
+    background-color: rgb(22, 22, 30);
+    margin: 0;
+    font-size: 14px !important;
+    font-family: 'Menlo', serif;
+}
+
+.title {
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.content {
+    color: lightgray;
+    display: flex;
+    justify-content: left;
+    line-height: 125%;
+}
+
+.links {
+    font-size: 110%;
+    line-height: 125%;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    text-shadow: -1px 1px black;
+}
+
+.link:hover {
+    animation: zomg 0.5s infinite;
+}
+
+@keyframes zomg {
+    0%, 100% {
+        color: rgb(255, 131, 131)
+    }
+
+    16% {
+        color: rgb(255, 146, 231)
+
+    }
+
+    32% {
+        color: rgb(166, 252, 255)
+    }
+
+    48% {
+        color: rgb(255, 247, 140)
+    }
+
+    64% {
+        color: rgb(215, 155, 255)
+    }
+
+    80% {
+        color: rgb(167, 255, 140)
+    }
+}
